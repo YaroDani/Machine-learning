@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.metrics import confusion_matrix, accuracy_score
+from sklearn.metrics import accuracy_score
 
 df= pd.read_csv("Titanic-Dataset.csv")
 df.drop(["Embarked", "Cabin", "Ticket", "Name", "Parch", "Fare", "PassengerId"], axis=1, inplace=True)
